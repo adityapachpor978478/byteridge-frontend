@@ -1,0 +1,11 @@
+﻿<h1>Hi {{currentUser.firstName}}!</h1>
+<p>You're logged in with Angular 8!!</p>
+<h3>Audit Data:</h3>
+<ag-grid-angular *ngIf="users" style="height: 350px; width: 1002px;" class="ag-theme-blue" 
+    [rowData]="users" 
+    [columnDefs]="columnDefs" 
+    [pagination]="true" 
+    [paginationAutoPageSize]="false" 
+    [gridOptions]="gridOptions"
+    [paginationPageSize]= 10 >
+</ag-grid-angular>
